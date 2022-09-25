@@ -1,47 +1,46 @@
-# Project PROJECT_NAME
+# Project I Call Shotgun!
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 ### Student Info
 
--   Name: YOUR NAME
--   Section: ##
+-   Name: Dominic Apgar
+-   Section: 202.05
 
 ## Game Design
 
--   Camera Orientation: _How are the art assets viewed from? (ie. topdown or side)_
--   Camera Movement: _How does the camera move in your game? (if at all)_
--   Player Health: _How are you handling player health? (healthbar, lives, ?)_
--   End Condition: _How does a game/round/level end?_
--   Scoring: _How does the player earn points in your game?_
+-   Camera Orientation: **Topdown**
+-   Camera Movement: **Fixed**
+-   Player Health: **Healthbar**
+-   End Condition: **Player Death**
+-   Scoring: **Enemy Kills**
 
 ### Game Description
 
-_A brief explanation of your game. Inculde what is the objective for the player. Think about what would go on the back of a game box._
+A topdown, action, shoot-em-up game where you must drift, evade, and shoot enemies to survive.
 
 ### Controls
 
 -   Movement
-    -   Up: 
-    -   Down: 
-    -   Left: 
-    -   Right: 
+    -   Up: **W**
+    -   Down: **S**
+    -   Left: **A (While Moving)**
+    -   Right: **D (While Moving)**
 -   Fire: 
 
 ## You Additions
 
-_List out what you added to your game to make it different for you_
+- Custom Made Assets
+- Unique Movement
+- Unique Shooting
 
 ## Sources
 
--   _List all project sources here –models, textures, sound clips, assets, etc._
--   _If an asset is from the Unity store, include a link to the page and the author’s name_
+-   Myself
 
 ## Known Issues
 
-_List any errors, lack of error checking, or specific information that I need to know to run your program_
+> No Known Errors
 
 ### Requirements not completed
-
-_If you did not complete a project requirement, notate that here_
 
