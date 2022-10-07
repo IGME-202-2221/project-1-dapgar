@@ -24,8 +24,7 @@ public class EnemySpawning : MonoBehaviour
     {
         if (numOfEnemies < maxEnemies)
         {
-            enemies.Add(Instantiate(enemyPF, spawnPoints[Random.Range(0, 4)].transform.position, 
-                transform.rotation = , transform));
+            enemies.Add(Instantiate(enemyPF, spawnPoints[Random.Range(0, 4)].transform.position, transform.rotation));
             numOfEnemies++;
         }
     }
