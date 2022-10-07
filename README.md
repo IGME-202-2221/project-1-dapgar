@@ -27,6 +27,8 @@ A topdown, action, shoot-em-up game where you must drift, evade, and shoot enemi
     -   Left: **A (While Moving)**
     -   Right: **D (While Moving)**
 -   Fire: 
+    -   Left Shoot: **Left Mouse Button**
+    -   RIght Shoot: **Right Mouse Button**
 
 ## You Additions
 
