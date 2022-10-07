@@ -11,6 +11,10 @@ public class CarCombat : MonoBehaviour
     [SerializeField] float spread = 1f;
     [SerializeField] int bulletCount = 7;
 
+    [SerializeField] float health;
+
+    public List<GameObject> bullets = new List<GameObject>();
+
     // Update is called once per frame
     void Update()
     {
@@ -30,9 +34,21 @@ public class CarCombat : MonoBehaviour
             float offset = (i - (bulletCount / 2) * spread);
             tempRot = Quaternion.Euler(bulletSpawnPt.eulerAngles.x, bulletSpawnPt.eulerAngles.y, bulletSpawnPt.eulerAngles.z + offset);
 
-            Instantiate(bulletPF, bulletSpawnPt.position, tempRot);
+            bullets.Add(Instantiate(bulletPF, bulletSpawnPt.position, tempRot));
         }
 
         //Instantiate(bulletPF, bulletSpawnPt.position, bulletSpawnPt.rotation);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (health <=0)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            health -= damage;
+        }
     }
 }

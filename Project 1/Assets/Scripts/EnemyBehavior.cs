@@ -6,15 +6,18 @@ public class EnemyBehavior : MonoBehaviour
 {
     [SerializeField] Transform player;
 
+    [SerializeField] float speed = 2f;
+    [SerializeField] float health = 100f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Car").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(player.position);
+        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
 }
