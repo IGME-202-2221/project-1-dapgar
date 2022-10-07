@@ -7,7 +7,6 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] Transform player;
 
     [SerializeField] float speed = 2f;
-    [SerializeField] float health = 100f;
 
     // Start is called before the first frame update
     void Start()

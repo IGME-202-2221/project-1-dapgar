@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1863577001615073570}
   - component: {fileID: 5855504509857268731}
   - component: {fileID: 4713585952828845418}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,5 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9efd2565697727249a736c4090fe6642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carCombat: {fileID: 0}
   projSpeed: 8
   projDamage: 0

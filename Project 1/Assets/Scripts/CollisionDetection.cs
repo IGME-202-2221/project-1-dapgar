@@ -21,7 +21,10 @@ public class CollisionDetection : MonoBehaviour
         // Checks bullet collisions.
         for (int i = 0; i < carCombat.bullets.Count; i++)
         {
-            CircleCollision(carCombat.bullets[i], enemySpawns.enemies);
+            if (carCombat.bullets[i] != null)
+            {
+                CircleCollision(carCombat.bullets[i], enemySpawns.enemies);
+            }
         }
     }
 
@@ -37,6 +40,11 @@ public class CollisionDetection : MonoBehaviour
                 obj.GetComponent<SpriteRenderer>().color = Color.red;
 
                 obj.transform.position = enemySpawns.spawnPoints[Random.Range(0, 4)].transform.position;
+
+                if (player.tag == "bullet")
+                {
+                    Destroy(player.gameObject);
+                }
 
                 return true;
             }

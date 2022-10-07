@@ -10,12 +10,17 @@ public class ProjectileBehavior : MonoBehaviour
     [SerializeField] float projSpeed;
     [SerializeField] int projDamage;
 
+    private void Start()
+    {
+        carCombat = GameObject.Find("Car").GetComponent<CarCombat>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.up * projSpeed * Time.deltaTime);
 
-        carCombat.bullets.Remove(gameObject);
+        //carCombat.bullets.Remove(gameObject);
         Destroy(gameObject, 4f);
     }
 }

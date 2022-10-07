@@ -5,7 +5,9 @@ using UnityEngine;
 // Controls all combat related to the player.
 public class CarCombat : MonoBehaviour
 {
-    [SerializeField] Transform bulletSpawnPt;
+    [SerializeField] Transform bulletSpawnPt1;
+    [SerializeField] Transform bulletSpawnPt2;
+
     [SerializeField] GameObject bulletPF;
 
     [SerializeField] float spread = 1f;
@@ -20,12 +22,16 @@ public class CarCombat : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            FireProj();
+            FireProj(bulletSpawnPt1);
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            FireProj(bulletSpawnPt2);
         }
     }
 
     // Fires Projectile
-    private void FireProj()
+    private void FireProj(Transform bulletSpawnPt)
     {
         Quaternion tempRot = bulletSpawnPt.rotation;
 
