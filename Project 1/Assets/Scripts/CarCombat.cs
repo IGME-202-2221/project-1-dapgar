@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Controls all combat related to the player.
 public class CarCombat : MonoBehaviour
@@ -9,6 +10,7 @@ public class CarCombat : MonoBehaviour
     [SerializeField] Transform bulletSpawnPt2;
 
     [SerializeField] GameObject bulletPF;
+    [SerializeField] Healthbar healthbar;
 
     [SerializeField] float spread = 1f;
     [SerializeField] int bulletCount = 7;
@@ -48,13 +50,14 @@ public class CarCombat : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (health <=0)
+        health -= damage;
+
+        if (health <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(2);
         }
-        else
-        {
-            health -= damage;
-        }
+
+        healthbar.SetHealth(health);
     }
 }
