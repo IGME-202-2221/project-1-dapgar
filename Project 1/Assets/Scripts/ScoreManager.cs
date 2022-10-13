@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour
@@ -11,11 +12,16 @@ public class ScoreManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        text = GameObject.Find("Scene").GetComponent<TextMeshProUGUI>();
+        SceneManager.activeSceneChanged += NewSceneLoaded;
     }
 
     private void Update()
     {
         text.text = "Score: " + score;
+    }
+
+    void NewSceneLoaded(Scene current, Scene next)
+    {
+        text = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
     }
 }
