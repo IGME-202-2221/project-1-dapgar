@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionDetection : MonoBehaviour
 {
     [SerializeField] EnemySpawning enemySpawns;
+    [SerializeField] ScoreManager scoreManager;
 
     [SerializeField] GameObject player;
     [SerializeField] CarCombat carCombat;
@@ -23,7 +24,10 @@ public class CollisionDetection : MonoBehaviour
         {
             if (carCombat.bullets[i] != null)
             {
-                CircleCollision(carCombat.bullets[i], enemySpawns.enemies);
+                if (CircleCollision(carCombat.bullets[i], enemySpawns.enemies))
+                {
+                    scoreManager.score += 100;
+                }
             }
         }
     }
