@@ -18,6 +18,12 @@
 ### Game Description
 
 A topdown, action, shoot-em-up game where you must drift, evade, and shoot enemies to survive.
+- Red Car 
+    - Your player, luckily carrying a shotgun when they started to attack.
+- Green Trucks
+    - The main enemies, started attacking you out of nowhere! Good thing you have a shotgun (rack up some points too)
+- Yellow Semis
+    - Just passing by, unfortunatley your shotgun does NOT work on them :( it does still block the bullets tho so watch out!
 
 ### Controls
 
@@ -35,14 +41,17 @@ A topdown, action, shoot-em-up game where you must drift, evade, and shoot enemi
 - Custom Made Assets
 - Unique Movement
 - Unique Shooting
+- Menu System
 
 ## Sources
 
--   Myself
+-   Dominic Apgar (Me)
 
 ## Known Issues
 
 > No Known Errors
 
 ### Requirements not completed
+
+> None
 
