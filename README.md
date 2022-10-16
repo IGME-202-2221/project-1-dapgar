@@ -45,11 +45,13 @@ A topdown, action, shoot-em-up game where you must drift, evade, and shoot enemi
 
 ## Sources
 
--   Myself
+-   Dominic Apgar (Me)
 
 ## Known Issues
 
 > No Known Errors
 
 ### Requirements not completed
+
+> None
 
