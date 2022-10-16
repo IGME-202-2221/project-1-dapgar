@@ -35,7 +35,7 @@ public class CarCombat : MonoBehaviour
     // Fires Projectile
     private void FireProj(Transform bulletSpawnPt)
     {
-        Quaternion tempRot = bulletSpawnPt.rotation;
+        Quaternion tempRot;
 
         for (int i = 0; i < bulletCount; i++)
         {
